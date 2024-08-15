@@ -1,0 +1,71 @@
+.container {
+  .title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .description {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .boxImage {
+    position: relative;
+    height: 350px;
+
+    & .textCloud {
+      position: absolute;
+      top: 10%;
+      left: 20%;
+    }
+    & .imageCloud {
+      position: absolute;
+      top: 0;
+      left: 10%;
+    }
+    & .imageCat {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+    }
+
+    @media screen and (max-width: 576px) {
+      order: 2;
+      margin-top: 20px;
+      height: 300px;
+    }
+  }
+
+  & .btnCha1 {
+    margin-bottom: 20px;
+    min-width: 80%;
+    max-width: 70%;
+    border-bottom: 2px solid rgb(85, 85, 85);
+  }
+
+  & .btnCha2 {
+    width: 80%;
+    border-bottom: 3px solid rgb(85, 85, 85);
+  }
+
+  & .btnCha3 {
+    margin-right: 2%;
+    width: 45px;
+  }
+
+  & .boxIntroduction {
+    background-color: black;
+
+    & .imageCat2 {
+      margin-left: 20%;
+    }
+
+    & .textRepeat {
+      color: palevioletred;
+    }
+
+    & .textIntroduction {
+      color: palevioletred;
+    }
+  }
+}
