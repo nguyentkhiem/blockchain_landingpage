@@ -1,71 +1,201 @@
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
 .container {
-  .title {
-    text-align: center;
-    margin-bottom: 0;
-  }
+  font-family: var(--font-gochi);
 
-  .description {
-    text-align: center;
-    margin-top: 0;
-  }
+  & .content1 {
+    background-image: url("../../public/bg.png");
+    background-repeat: no-repeat;
+    height: 800px;
 
-  .boxImage {
-    position: relative;
-    height: 350px;
-
-    & .textCloud {
-      position: absolute;
-      top: 10%;
-      left: 20%;
-    }
-    & .imageCloud {
-      position: absolute;
-      top: 0;
-      left: 10%;
-    }
-    & .imageCat {
-      position: absolute;
-      top: 25%;
-      left: 25%;
+    & .imageTitle {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
     }
 
-    @media screen and (max-width: 576px) {
-      order: 2;
-      margin-top: 20px;
-      height: 300px;
+    & .description {
+      text-align: center;
+      margin-top: 0;
+      font-family: var(--font-gochi);
+      font-size: 80px;
+      font-weight: 400;
+      line-height: 94.3px;
+      text-align: center;
+
+      @media screen and (max-width: $sm) {
+        font-size: 35px;
+        line-height: 35px;
+      }
+
+      @media screen and (min-width: $sm) and (max-width: $lg) {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    }
+
+    & .boxImage {
+      // position: relative;
+      height: 350px;
+
+      & .imageCloud {
+        // position: absolute;
+        top: 0;
+        left: 10%;
+        width: 426px;
+        height: 188px;
+
+        @media screen and (min-width: $sm) and (max-width: $lg) {
+          width: 300px;
+          height: 150px;
+          left: 5%;
+        }
+
+        @media screen and (max-width: $sm) {
+          width: 233px;
+          height: 103px;
+        }
+      }
+      & .imageCat {
+        // position: absolute;
+        // top: 25%;
+        // left: 25%;
+        // width: 697px;
+        // height: 697px;
+
+        @media screen and (max-width: $sm) {
+          // width: 233px;
+          // height: 103px;
+        }
+      }
+
+      @media screen and (max-width: $sm) {
+        order: 2;
+        margin-top: 20px;
+      }
+    }
+
+    & .btnBatch1 {
+      margin-bottom: 20px;
+      min-width: 80%;
+      max-width: 70%;
+      border-bottom: 2px solid rgb(85, 85, 85);
+      font-family: var(--font-gochi);
+    }
+
+    & .btnBatch2 {
+      width: 80%;
+      border-bottom: 3px solid rgb(85, 85, 85);
+    }
+
+    & .btnBatch3 {
+      margin-right: 2%;
+      width: 45px;
     }
   }
 
-  & .btnCha1 {
-    margin-bottom: 20px;
-    min-width: 80%;
-    max-width: 70%;
-    border-bottom: 2px solid rgb(85, 85, 85);
+  & .content2 {
+    & .boxIntroduction {
+      background-color: black;
+
+      & .imageCat2 {
+        margin-left: 20%;
+      }
+
+      & .boxTextRepeat {
+        overflow-x: hidden;
+        width: 100%;
+        word-break: keep-all;
+        padding: 8px 0px;
+        display: flex;
+
+        & .boxRepeat {
+          display: flex;
+          margin-right: 30px;
+
+          & .textRepeat {
+            margin-right: 20px;
+            color: palevioletred;
+            &:first-child {
+              margin-left: 10px;
+            }
+          }
+          & .textRepeatChild {
+            margin-right: 20px;
+            color: palevioletred;
+          }
+        }
+      }
+
+      & .textIntroduction {
+        color: palevioletred;
+      }
+    }
   }
 
-  & .btnCha2 {
-    width: 80%;
-    border-bottom: 3px solid rgb(85, 85, 85);
-  }
+  & .content3 {
+    background-image: url("../../public/bg.png");
+    background-repeat: no-repeat;
 
-  & .btnCha3 {
-    margin-right: 2%;
-    width: 45px;
-  }
-
-  & .boxIntroduction {
-    background-color: black;
-
-    & .imageCat2 {
-      margin-left: 20%;
+    & .cartTitleHead {
+      display: flex;
+      justify-content: center;
     }
 
-    & .textRepeat {
-      color: palevioletred;
+    & .boxBtnBatch4 {
+      display: flex;
+      justify-content: center;
+      & .btnBatch4 {
+        margin: 20px;
+        width: 50%;
+        border-bottom: 2px solid rgb(85, 85, 85);
+      }
     }
 
-    & .textIntroduction {
-      color: palevioletred;
+    & .cartContainer {
+      margin-top: 30px;
+      & .cartContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .cartItem {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          & .cartImage {
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  & .content4 {
+    margin-top: 30px;
+    & .boxTextRepeat {
+      overflow-x: hidden;
+      width: 100%;
+      word-break: keep-all;
+      background-color: palevioletred;
+      padding: 10px 0px;
+      border-top: 2px solid black;
+
+      & .textRepeat {
+        margin-right: 20px;
+        color: black;
+        &:first-child {
+          margin-left: 10px;
+        }
+      }
+      & .textRepeatChild {
+        margin-right: 20px;
+        color: black;
+      }
     }
   }
 }
