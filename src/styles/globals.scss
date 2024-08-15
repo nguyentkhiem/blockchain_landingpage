@@ -16,14 +16,6 @@
   }
 }
 
-html {
-  font-family: var(--font-gochi);
-}
-
-body {
-  font-family: var(--font-gochi);
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
