@@ -458,7 +458,7 @@ export default function Home() {
             sm={12}
             md={12}
             lg={6}
-            xl={12}
+            xl={6}
           >
             <Image width={200} height={200} src="/cat_more3.svg" alt="" />
           </Col>
